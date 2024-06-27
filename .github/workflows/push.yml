@@ -6,10 +6,10 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
-        - name: Run Unit Tests
-          run: go test
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Unit Tests
+        run: go test
 
   deploy:
     name: build && push image to docker hub
