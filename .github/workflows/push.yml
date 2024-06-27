@@ -14,7 +14,7 @@ jobs:
   deploy:
     name: build && push image to docker hub
     runs-on: ubuntu-latest
-    need: test
+    needs: test
     steps:
       - uses: actions/checkout@v3
         with:
