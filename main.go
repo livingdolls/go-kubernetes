@@ -13,11 +13,15 @@ func main() {
 		return c.SendString("hello world")
 	})
 
+	app.Get("/healt-check", func(c *fiber.Ctx) error {
+		return c.SendString("status ok!")
+	})
+
 	fmt.Println(hello())
 
 	app.Listen(":3001")
 }
 
 func hello() string {
-	return "Hello Golangs"
+	return "Hello Golang"
 }
