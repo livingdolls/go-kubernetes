@@ -25,4 +25,4 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags: livingdolls/go-kubernetes:latest
+          tags: yurinahirate/go-kubernetes:latest
